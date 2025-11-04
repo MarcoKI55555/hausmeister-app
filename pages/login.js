@@ -8,7 +8,7 @@ export default function Login() {
   const [loading,setLoading] = useState(false);
   const router = useRouter();
 
-  async function handleLogin(e:any){
+  async function handleLogin(e) {
     e.preventDefault();
     setLoading(true);
     const { error } = await supabase.auth.signInWithPassword({ email, password });
