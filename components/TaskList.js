@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { supabase } from '../lib/supabaseClient';
 
-export default function TaskList({ templateOnly = false }: { templateOnly?: boolean }) {
-  const [tasks, setTasks] = useState<any[]>([]);
+export default function TaskList({ templateOnly = false }) {
+  const [tasks, setTasks] = useState([]);
 
   useEffect(()=>{
     (async ()=>{
