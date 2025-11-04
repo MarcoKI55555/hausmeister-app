@@ -4,8 +4,8 @@ import TaskList from '../components/TaskList';
 import { useRouter } from 'next/router';
 
 export default function Home(){
-  const [user, setUser] = useState<any>(null);
-  const [liegenschaften, setLiegenschaften] = useState<any[]>([]);
+  const [user, setUser] = useState(null);
+  const [liegenschaften, setLiegenschaften] = useState([]);
   const router = useRouter();
 
   useEffect(()=> {
